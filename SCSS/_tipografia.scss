@@ -1,0 +1,52 @@
+
+/*tipografia*/
+        @font-face {
+            font-family: Yellowtail;
+            src: url(Tipografía/Yellowtail/Yellowtail-Regular.ttf);
+        }
+        @font-face {
+            font-family: FireSans;
+            src: url(Tipografía/FiraSans/FiraSans-Medium.ttf);
+        }
+        .letraYellow {
+        font-family: "Yellowtail";
+        }
+        nav, main, footer {
+        font-family: "FireSans";
+        }
+
+
+/*aplico mixin*/
+
+@mixin tipografia ($letra, $tamanio) {
+font-style: $letra;
+font-size: $tamanio;
+}
+.letraGrande {
+@include tipografia(normal, 400%);
+}
+.letraGrande2 {
+@include tipografia(normal, 380%);
+}
+.letraMediana {
+@include tipografia(normal, 120%);
+}
+.letraMediana2 {
+@include tipografia(normal, 130%);
+}
+.letraChica {
+@include tipografia(normal, 83%);
+}
+.letraChica2 {
+@include tipografia(normal, 97%);
+}
+
+
+/*estilo letra*/
+.letraItalica {
+    font-style: italic;
+    }
+.letraNegrita {
+    font-weight: bold;
+    }
+
